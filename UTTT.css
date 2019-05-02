@@ -1,0 +1,74 @@
+.row, div{
+  padding: 0;
+  margin: 0;
+}
+.bb-row div{
+  width: 110px;
+  height: 110px;
+  display: inline-block;
+  // fixes the inline-block bug
+  margin-left:-4px;
+  margin-top: -4px;
+}
+.bb-row{
+  display:inline-block;
+  width:330px;
+}
+.bb-row .lil-board{
+  float: left;
+  margin-top: 16px;
+  margin-left: 16px;
+}
+.lil-board .row{
+  height: 35px;
+  line-height: 31px;
+}
+.lil-board .row div{
+  width:30px;
+  height:30px;
+  display: inline-block;
+  line-height: 21px;
+  text-align: center;
+  color:#222;
+}
+.clickable{
+  cursor:pointer;
+  background-color:rgba(137,255,212,0.5);
+}
+.highlight{
+  background-color:rgba(225,137,137,0.5);
+}
+.gmark {
+  float: left;
+  font-size: 44px;
+  line-height: 26px;
+  margin: 0 !important;
+  text-align: center;
+  vertical-align: middle;
+}
+.t, .c{
+  border-bottom:1px solid gray;
+}
+.l, .m{
+  border-right:1px solid gray;
+}
+.shell {
+  float: left;
+  margin: 10px;
+}
+#mark-message{
+  font-size: 300px;
+  line-height:254px;
+}
+#all-wrapper{
+  width: 100%;
+  height: 100%;
+  background-color:#3c3c3c;
+  display:inline-block;
+}
+#logs > table{
+  background:white;
+}
+#log-container > tr {
+  cursor: pointer;
+}
