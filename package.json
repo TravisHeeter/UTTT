@@ -1,0 +1,23 @@
+{
+  "name": "uttt",
+  "version": "1.0.0",
+  "description": "Ultimate Tic-Tac-Toe",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TravisHeeter/UTTT.git"
+  },
+  "author": "Travis Heeter",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TravisHeeter/UTTT/issues"
+  },
+  "homepage": "https://github.com/TravisHeeter/UTTT#readme",
+  "dependencies": {
+    "bootstrap": "^3.4.1",
+    "jquery": "^3.4.1"
+  }
+}
