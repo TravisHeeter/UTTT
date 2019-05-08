@@ -117,25 +117,6 @@ function calculateNextBoard(s){
 function canAddMark(s){
   return $(s).hasClass('clickable');
 }
-function xWinSmall(){
-  r();
-  showInOrder([25,57,30,48,23,39,21]);
-}
-
-async function showInOrder(array){
-  for(const element of array)
-   await clickSpot(element);
-}
-
-function clickSpot(overallid){
-  return new Promise(function(resolve){
-    setTimeout(()=>{
-      var e = $(`[data-overallid=${overallid}]`);
-      e.click();
-      resolve();
-    },$('#wait-amount').val())
-  })
-}
 
 function highlightSpot(overallID){
   var o = overallID ? overallID : $('#highlight-input').val();
@@ -143,6 +124,17 @@ function highlightSpot(overallID){
 }
 
 function r(){
+  [...Array(9)].forEach((e,i) => {
+    var c = 'bot'
+    
+    if( 1 % 3 == 0)
+      c = 'top'
+    else if( i % 3 == 1 )
+      c = 'cen'
+    
+    $('#big-board').append(`<div class=bb-row ${c}`)
+    
+  })
   $('.gmark').remove();
   $('#log-container').html('')
   $('.lil-board .row > div')
